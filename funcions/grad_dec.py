@@ -1,4 +1,4 @@
-#  Cost Funcion in multiple lineal regresiion:   𝐽(𝑤,𝑏) = 1/2𝑚 * ∑(𝑖=0 | 𝑚−1) (𝐰⋅𝐱(𝑖)+𝑏)− 𝑦(𝑖) )^2
+#  Cost Function in multiple linear regression:   𝐽(𝑤,𝑏) = 1/2𝑚 * ∑(𝑖=0 | 𝑚−1) (𝐰⋅𝐱(𝑖)+𝑏)− 𝑦(𝑖) )^2
 #
 #       𝑤𝑗 = 𝑤𝑗 − alpha * dJ/dw
 # 
