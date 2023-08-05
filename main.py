@@ -56,8 +56,6 @@ prediccion[2] = float(prediccion_temp)
 # Escalado de los valores de entrada de la predicción
 prediccion = (prediccion - np.min(X_train)) / (np.max(X_train) - np.min(X_train))
 
-print(prediccion)
-
 # Realizar la predicción escalada
 y_hat_scaled_predi = model_func.model(prediccion, w, b)
 
