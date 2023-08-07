@@ -10,7 +10,7 @@
 
 import numpy as np
 
-def cost_funcion(X, y, w, b):
+def cost_function(X, y, w, b):
     
     m=len(y)
     cost = 0
@@ -20,7 +20,7 @@ def cost_funcion(X, y, w, b):
     cost = cost / (2 * m)
     return cost
 
-def Compute_Gradant(X, y, w, b):
+def Compute_Gradient(X, y, w, b):
 
     m, n=X.shape
     dj_dw = np.zeros((n,))
@@ -42,13 +42,13 @@ def Gradient_Decent(X, y, alpha, num_interaccions, w, b):
 
     for i in range(num_interaccions):
 
-        dj_dw, dj_db = Compute_Gradant(X, y, w, b)
+        dj_dw, dj_db = Compute_Gradient(X, y, w, b)
 
         w = w - alpha * dj_dw
  
         b = b - alpha * dj_db
 
-        J_history.append(cost_funcion(X, y, w, b))
+        J_history.append(cost_function(X, y, w, b))
     
     return w, b, J_history
 
