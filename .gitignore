@@ -1,1 +1,4 @@
-Test/main_test.py
+Test/
+machine_learning/
+functions/__pycache__/
+.gitignore/
